@@ -1,0 +1,127 @@
+/*
+ * Theme Name: Bafangkids5
+ * Description: Child theme of TwentyEleven
+ * Author: Marc Remijn
+ * Template: twentyeleven
+ */
+
+@import url("../twentyeleven/style.css");
+
+
+/* post-thumbnail naar links en post inhoud naar rechts
+ * in de 'article'
+ */
+
+.post-thumbnail {
+	float:left;
+	margin:0;
+	padding:15px 0 0 0;
+	width: 320px;
+}
+
+.post-wrap {
+	margin-left:340px;
+	min-height: 300px;
+	padding:0;
+}
+
+/* Overriden clears van elementen in de post-wrap */
+
+.post-wrap .entry-title {
+	clear: none;
+}
+
+.post-wrap .entry-meta {
+	clear: none;
+}
+
+body.home article {
+	clear: both;
+}
+
+.one-column #page {
+	        max-width: 900px;
+}
+
+/* Ook fancy border om ngg gallery images */
+img[class*="wp-post-image"] {
+	border: 1px solid #ddd;
+	padding: 6px;
+}
+
+a:focus img[class*="wp-post-image"],
+a:hover img[class*="wp-post-image"],
+a:active img[class*="wp-post-image"] {
+	background: #eee;
+	border-color: #bbb;
+}
+
+
+#site-title {
+	background: url(images/logo.gif) no-repeat 0px 16px;
+	padding-left: 68px;
+	margin-right: 160px;
+}
+
+#site-title a {
+	font:28px arial,sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+#site-description {
+	margin: 0 270px 1em 0;
+}
+
+#branding hgroup {
+	margin: 0 4%;
+}
+
+/* Override 'lelijke h3's */
+.entry-content h3 {
+    font-weight: bold;
+    font-size: 10pt;
+    letter-spacing: inherit;
+    line-height: 2.6em;
+    text-transform: inherit;
+}
+
+@media (max-width: 720px) {
+	.post-thumbnail {
+		float:none;
+		margin:0;
+		padding:30px 0 0 0;
+		width: auto;
+	}
+
+	.post-wrap {
+		margin-left:0;
+		min-height: 0;
+		padding:0;
+		position: relative;
+	}
+
+	.one-column #page {
+		min-width: 370px;
+	}
+}
+
+@media print {
+	.post-thumbnail {
+		float:none;
+		margin:0;
+		padding:30px 0 0 0;
+		width: auto;
+	}
+
+	.post-wrap {
+		margin-left:0;
+		min-height: 0;
+		padding:0;
+		position: relative;
+	}
+
+	.one-column #page {
+		min-width: 370px;
+	}
+}
+
