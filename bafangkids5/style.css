@@ -39,6 +39,10 @@ body.home article {
 	clear: both;
 }
 
+#page {
+		max-width: 1500px;
+}
+
 .one-column #page {
 	        max-width: 900px;
 }
