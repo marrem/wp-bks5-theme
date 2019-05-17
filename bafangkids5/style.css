@@ -8,6 +8,32 @@
 @import url("../twentyeleven/style.css");
 
 
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Arimo Regular'), local('Arimo-Regular'), url(font/Arimo/Arimo-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Arimo Bold'), local('Arimo-Bold'), url(font/Arimo/Arimo-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Arimo';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Arimo Italic'), local('Arimo-Italic'), url(font/Arimo/Arimo-Italic.ttf) format('truetype');
+}
+
+article {
+  font-family: Arimo;
+}
+
+
 /* post-thumbnail naar links en post inhoud naar rechts
  * in de 'article'
  */
